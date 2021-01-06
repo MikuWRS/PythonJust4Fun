@@ -21,6 +21,8 @@ def buscar(palabra):
 	else:
 		return "Ingresa una opcion correcta"
 
+
+
 palabra=input("Ingrese la palabra que quiere buscar: ")
 salida=buscar(palabra)
 if type(salida)==list:
