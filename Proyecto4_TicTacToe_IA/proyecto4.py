@@ -115,7 +115,7 @@ def main():
 main()
 while True:
 	x=input("Quieres jugar otra vez? (s/n)\n")
-	if x.lower()=='y':
+	if x.lower()=='s':
 		tablero=[' ' for x in range(10)]
 		print('-------------------------\n')
 		main()
