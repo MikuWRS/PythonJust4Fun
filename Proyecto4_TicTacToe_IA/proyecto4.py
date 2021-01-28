@@ -1,4 +1,4 @@
-
+import os
 tablero=[' ' for x in range(10)]
 c_posicion='123456789'
 
@@ -91,6 +91,7 @@ def main():
 	while not(tablerolleno(tablero)):
 		if not(ganador(tablero,'O')):
 			turnojugador()
+			os.system('clear')
 			p_tablero(tablero)
 		else:
 			print("Lo siento, perdiste\n")
@@ -102,6 +103,7 @@ def main():
 			else:
 				insertar('O',turno)
 				print("IA puso un O en la posicion ",turno,":\n")
+				os.system('clear')
 				p_tablero(tablero)
 		else:
 			print("Has Ganado\n")
